@@ -1,0 +1,17 @@
+C:\Users\admin\Desktop\63Client\bin\Debug\netcoreapp3.1\EwClient.exe
+C:\Users\admin\Desktop\63Client\bin\Debug\netcoreapp3.1\EwClient.deps.json
+C:\Users\admin\Desktop\63Client\bin\Debug\netcoreapp3.1\EwClient.runtimeconfig.json
+C:\Users\admin\Desktop\63Client\bin\Debug\netcoreapp3.1\EwClient.runtimeconfig.dev.json
+C:\Users\admin\Desktop\63Client\bin\Debug\netcoreapp3.1\EwClient.dll
+C:\Users\admin\Desktop\63Client\bin\Debug\netcoreapp3.1\EwClient.pdb
+C:\Users\admin\Desktop\63Client\obj\Debug\netcoreapp3.1\EwClient.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\63Client\obj\Debug\netcoreapp3.1\_63Client.Form1.resources
+C:\Users\admin\Desktop\63Client\obj\Debug\netcoreapp3.1\EwClient.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\63Client\obj\Debug\netcoreapp3.1\EwClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\63Client\obj\Debug\netcoreapp3.1\EwClient.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\63Client\obj\Debug\netcoreapp3.1\EwClient.AssemblyInfo.cs
+C:\Users\admin\Desktop\63Client\obj\Debug\netcoreapp3.1\EwClient.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\63Client\obj\Debug\netcoreapp3.1\EwClient.dll
+C:\Users\admin\Desktop\63Client\obj\Debug\netcoreapp3.1\EwClient.pdb
+C:\Users\admin\Desktop\63Client\obj\Debug\netcoreapp3.1\EwClient.genruntimeconfig.cache
+C:\Users\admin\Desktop\63Client\obj\Debug\netcoreapp3.1\Client.Form1.resources
