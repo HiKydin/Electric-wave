@@ -121,7 +121,7 @@ namespace _63Client
             this.Controls.Add(this.btnConnect);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = "Electric wave 客户端v1.0";
+            this.Text = "Electric wave 客户端v1.0.1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

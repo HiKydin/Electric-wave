@@ -233,10 +233,5 @@ namespace _62Server
             }
             catch { }
         }
-
-        private void txtPort_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

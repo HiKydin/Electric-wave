@@ -44,10 +44,10 @@ namespace _62Server
             // 
             // btnListening
             // 
-            this.btnListening.Location = new System.Drawing.Point(382, 72);
-            this.btnListening.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnListening.Location = new System.Drawing.Point(453, 49);
+            this.btnListening.Margin = new System.Windows.Forms.Padding(2);
             this.btnListening.Name = "btnListening";
-            this.btnListening.Size = new System.Drawing.Size(100, 31);
+            this.btnListening.Size = new System.Drawing.Size(84, 31);
             this.btnListening.TabIndex = 0;
             this.btnListening.Text = "开始监听";
             this.btnListening.UseVisualStyleBackColor = true;
@@ -55,46 +55,45 @@ namespace _62Server
             // 
             // txtMsg
             // 
-            this.txtMsg.Location = new System.Drawing.Point(44, 337);
-            this.txtMsg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMsg.Location = new System.Drawing.Point(55, 300);
+            this.txtMsg.Margin = new System.Windows.Forms.Padding(2);
             this.txtMsg.Multiline = true;
             this.txtMsg.Name = "txtMsg";
-            this.txtMsg.Size = new System.Drawing.Size(651, 169);
+            this.txtMsg.Size = new System.Drawing.Size(589, 169);
             this.txtMsg.TabIndex = 10;
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(44, 74);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAddress.Location = new System.Drawing.Point(55, 50);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(2);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(197, 27);
+            this.txtAddress.Size = new System.Drawing.Size(200, 27);
             this.txtAddress.TabIndex = 3;
-            this.txtAddress.Text = "192.168.31.181";
+            this.txtAddress.Text = "请输入服务器IP地址";
             // 
             // txtPort
             // 
-            this.txtPort.Location = new System.Drawing.Point(261, 72);
-            this.txtPort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPort.Location = new System.Drawing.Point(270, 50);
+            this.txtPort.Margin = new System.Windows.Forms.Padding(2);
             this.txtPort.Name = "txtPort";
-            this.txtPort.Size = new System.Drawing.Size(102, 27);
+            this.txtPort.Size = new System.Drawing.Size(160, 27);
             this.txtPort.TabIndex = 4;
-            this.txtPort.Text = "60000";
-            this.txtPort.TextChanged += new System.EventHandler(this.txtPort_TextChanged);
+            this.txtPort.Text = "请输入服务器端口号";
             // 
             // txtFileaddress
             // 
-            this.txtFileaddress.Location = new System.Drawing.Point(44, 528);
-            this.txtFileaddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFileaddress.Location = new System.Drawing.Point(55, 496);
+            this.txtFileaddress.Margin = new System.Windows.Forms.Padding(2);
             this.txtFileaddress.Name = "txtFileaddress";
-            this.txtFileaddress.Size = new System.Drawing.Size(470, 27);
+            this.txtFileaddress.Size = new System.Drawing.Size(493, 27);
             this.txtFileaddress.TabIndex = 5;
             // 
             // btnChoose
             // 
-            this.btnChoose.Location = new System.Drawing.Point(533, 528);
-            this.btnChoose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnChoose.Location = new System.Drawing.Point(559, 496);
+            this.btnChoose.Margin = new System.Windows.Forms.Padding(2);
             this.btnChoose.Name = "btnChoose";
-            this.btnChoose.Size = new System.Drawing.Size(71, 27);
+            this.btnChoose.Size = new System.Drawing.Size(85, 27);
             this.btnChoose.TabIndex = 6;
             this.btnChoose.Text = "选择";
             this.btnChoose.UseVisualStyleBackColor = true;
@@ -102,10 +101,10 @@ namespace _62Server
             // 
             // btnSend
             // 
-            this.btnSend.Location = new System.Drawing.Point(617, 528);
-            this.btnSend.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSend.Location = new System.Drawing.Point(665, 496);
+            this.btnSend.Margin = new System.Windows.Forms.Padding(2);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(78, 27);
+            this.btnSend.Size = new System.Drawing.Size(90, 27);
             this.btnSend.TabIndex = 7;
             this.btnSend.Text = "发送文件";
             this.btnSend.UseVisualStyleBackColor = true;
@@ -113,10 +112,10 @@ namespace _62Server
             // 
             // btnEnter
             // 
-            this.btnEnter.Location = new System.Drawing.Point(717, 337);
-            this.btnEnter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEnter.Location = new System.Drawing.Point(665, 300);
+            this.btnEnter.Margin = new System.Windows.Forms.Padding(2);
             this.btnEnter.Name = "btnEnter";
-            this.btnEnter.Size = new System.Drawing.Size(89, 71);
+            this.btnEnter.Size = new System.Drawing.Size(90, 70);
             this.btnEnter.TabIndex = 8;
             this.btnEnter.Text = "发送";
             this.btnEnter.UseVisualStyleBackColor = true;
@@ -124,10 +123,10 @@ namespace _62Server
             // 
             // btnShake
             // 
-            this.btnShake.Location = new System.Drawing.Point(717, 435);
-            this.btnShake.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnShake.Location = new System.Drawing.Point(665, 399);
+            this.btnShake.Margin = new System.Windows.Forms.Padding(2);
             this.btnShake.Name = "btnShake";
-            this.btnShake.Size = new System.Drawing.Size(89, 70);
+            this.btnShake.Size = new System.Drawing.Size(90, 70);
             this.btnShake.TabIndex = 9;
             this.btnShake.Text = "震动";
             this.btnShake.UseVisualStyleBackColor = true;
@@ -135,18 +134,18 @@ namespace _62Server
             // 
             // txtLog
             // 
-            this.txtLog.Location = new System.Drawing.Point(44, 135);
-            this.txtLog.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtLog.Location = new System.Drawing.Point(55, 100);
+            this.txtLog.Margin = new System.Windows.Forms.Padding(2);
             this.txtLog.Multiline = true;
             this.txtLog.Name = "txtLog";
-            this.txtLog.Size = new System.Drawing.Size(651, 169);
+            this.txtLog.Size = new System.Drawing.Size(700, 170);
             this.txtLog.TabIndex = 11;
             // 
             // cboIP
             // 
             this.cboIP.FormattingEnabled = true;
-            this.cboIP.Location = new System.Drawing.Point(499, 75);
-            this.cboIP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboIP.Location = new System.Drawing.Point(559, 49);
+            this.cboIP.Margin = new System.Windows.Forms.Padding(2);
             this.cboIP.Name = "cboIP";
             this.cboIP.Size = new System.Drawing.Size(196, 28);
             this.cboIP.TabIndex = 12;
@@ -155,7 +154,7 @@ namespace _62Server
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(825, 607);
+            this.ClientSize = new System.Drawing.Size(832, 553);
             this.Controls.Add(this.cboIP);
             this.Controls.Add(this.txtLog);
             this.Controls.Add(this.btnShake);
@@ -167,9 +166,9 @@ namespace _62Server
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.txtMsg);
             this.Controls.Add(this.btnListening);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = "Electric wave服务端v1.0";
+            this.Text = "Electric wave 服务端v1.0.1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

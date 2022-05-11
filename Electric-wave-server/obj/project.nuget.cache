@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IOrMzSo4oDJFxGOXjDakCfzFh4vIE/tIvUyTK+50t6Xwjy0nHPXyMpezf8XwK2kQ5XYvrP7lYKVysNmingltSA==",
+  "dgSpecHash": "VAp44L4aFTxB42g8a0ui0ddlyhDNkwhF1BtRQt2GNaPTA/NataQiu+zBH0YT+oR5Ns2BSLEaHPv6cx68T+NDrQ==",
   "success": true,
-  "projectFilePath": "C:\\Library\\Project\\Electric-wave\\Electric-wave-server\\Server.csproj",
+  "projectFilePath": "C:\\Library\\Project\\Electric-wave\\Electric-wave-server\\EwServer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
