@@ -14,23 +14,23 @@ net5.0-windows
 ### 目录结构描述
 ├── Readme.md                   // help
 
-├── Electric-wave-client       // 客户端
-│   ├── bin
-│   ├── obj								//
-│   ├── 63Client.sln        		 // 
-│   ├── EwClient.csproj          // 
-│   ├── EwClient.csproj.user // 
-│   ├── Form1.cs         			// 
-│   └── Form1.Designer.cs	// 
+├── Electric-wave-client        // 客户端  
+│   ├── bin                                //  
+│   ├── obj								//  
+│   ├── 63Client.sln        		 //   
+│   ├── EwClient.csproj          //   
+│   ├── EwClient.csproj.user //   
+│   ├── Form1.cs         			//   
+│   └── Form1.Designer.cs	//   
 
-├── Electric-wave-server       // 服务端
-│   ├── bin
-│   ├── obj							 	//
-│   ├── 62Server.sln       	 	 // 
-│   ├── EwServer.csproj          // 
-│   ├── EwServer.csproj.user // 
-│   ├── Form1.cs         		 	// 
-│   └── Form1.Designer.cs 	// 
+├── Electric-wave-server        // 服务端  
+│   ├── bin                                 //  
+│   ├── obj							 	//  
+│   ├── 62Server.sln       	 	 //   
+│   ├── EwServer.csproj          //   
+│   ├── EwServer.csproj.user //   
+│   ├── Form1.cs         		 	//   
+│   └── Form1.Designer.cs 	//   
 
 ### v1.0.1 版本内容更新
 
