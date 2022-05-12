@@ -40,7 +40,7 @@ namespace _63Client
         }
 
         /// <summary>
-        /// 客户端接收消息
+        /// 接收消息
         /// </summary>
         /// <param name="o"></param>
         void Receive(object o)
@@ -90,6 +90,10 @@ namespace _63Client
                 catch { }
             }
         }
+
+        /// <summary>
+        /// 震动事件
+        /// </summary>
         private void Shake()
         {
             int leftWidth = this.Left; //指定窗体左边值
@@ -130,10 +134,10 @@ namespace _63Client
         {
             try
             {
-                string str = txtMsg.Text.Trim();
-                byte[] buffer = System.Text.Encoding.UTF8.GetBytes(str);
-                socketSend.Send(buffer);
-                txtMsg.Clear();
+                string str = txtMsg.Text.Trim();//获取输入框的内容
+                byte[] buffer = System.Text.Encoding.UTF8.GetBytes(str);//UTF-8转码
+                socketSend.Send(buffer);//发送
+                txtMsg.Clear();//清空输入框
             }
             catch { }
         }
@@ -160,7 +164,10 @@ namespace _63Client
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            byte[] buffer = new byte[1];
+            buffer[0] = 2;
+            socketSend.Send(buffer, 0, buffer.Length, SocketFlags.None);
+            txtAddress.Clear();
         }
     }
 }

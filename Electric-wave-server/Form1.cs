@@ -53,6 +53,39 @@ namespace _62Server
             catch { }
         }
 
+        /// <summary>
+        /// 震动事件
+        /// </summary>
+        private void Shake()
+        {
+            int leftWidth = this.Left; //指定窗体左边值
+            int topWidth = this.Top; //指定窗体上边值
+
+            for (int i = 0; i < 20; i++) //设定循环次数为20 且加1
+            {
+                if (i % 2 == 0) //如果i 能给2整除
+                {
+                    this.Left = this.Left + 10; //窗体左边值加10
+                }
+                else //否则
+                {
+                    this.Left = this.Left - 10;//窗体左边边值减10
+                }
+                if (i % 2 == 0)//如果i能给2整除
+                {
+                    this.Top = this.Top + 10;//窗体上边值加10
+                }
+                else//否则
+                {
+                    this.Top = this.Top - 10;//窗体上边值减10
+                }
+
+                System.Threading.Thread.Sleep(30);//震动频率
+            }
+
+            this.Left = leftWidth;//重设窗体初此左边值
+            this.Top = topWidth; //重设窗体初此上边值
+        }
 
         /// <summary>
         /// 等待客户端的连接 并且创建与之通信的Socket
@@ -84,6 +117,11 @@ namespace _62Server
             { }
         }
 
+
+        /// <summary>
+        /// 接收信息
+        /// </summary>
+        /// <param name="o"></param>
         void Receive(object o)
         {
             Socket socketSend = o as Socket;
@@ -99,8 +137,34 @@ namespace _62Server
                     {
                         break;
                     }
-                    string str = Encoding.UTF8.GetString(buffer, 0, r);
-                    ShowMsg(socketSend.RemoteEndPoint + ":" + str);
+                    //提取出接收内容的协议
+                    //==0表示传输的是文字消息
+                    if (buffer[0] == 0)
+                    {
+                        string str = Encoding.UTF8.GetString(buffer, 0, r);
+                        ShowMsg(socketSend.RemoteEndPoint + ":" + str);
+                    }
+                    //==1表示传输的是文件
+                    else if (buffer[0] == 1)
+                    {
+                        MessageBox.Show("对方发送了一个文件，请查收！");
+                        SaveFileDialog sfd = new SaveFileDialog();
+                        sfd.InitialDirectory = @"C:\Users\admin\source\repos\62Server";
+                        sfd.Title = "请选择要保存的路径";
+                        sfd.Filter = "所有文件|*.*";
+                        sfd.ShowDialog(this);
+                        string path = sfd.FileName;
+                        using (FileStream fsWrite = new FileStream(path, FileMode.OpenOrCreate, FileAccess.Write))
+                        {
+                            fsWrite.Write(buffer, 1, r - 1);
+                        }
+                        MessageBox.Show("保存成功！");
+                    }
+                    //==2表示传输的是震动
+                    else if (buffer[0] == 2)
+                    {
+                        Shake();
+                    }
                 }
                 catch
                 { }
@@ -214,6 +278,11 @@ namespace _62Server
             catch { }
         }
 
+        /// <summary>
+        /// 发送震动
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnShake_Click(object sender, EventArgs e)
         {
             try
